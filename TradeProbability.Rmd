@@ -1,0 +1,40 @@
+---
+title: "Trade Side Probability"
+output: html_document
+date:   "`r format(Sys.Date(), '%B %d, %Y')`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = TRUE, warning = FALSE, fig.height = 6, fig.width = 9)
+knitr::read_chunk('TradeProbability.R')
+```
+
+The goal of this analysis is to determine if we can improve upon weighted-midpoint (WMP) as an estimate for the fair value of a security. The main advantages to using WMP as a fair value estimate are:
+
+- Simple to calculate
+- Simple to understand
+- Appears to be a good proxy for supply/demand
+
+The main downsides are:
+
+- Other potentially useful information is ignored
+- Traders are likely to be more intelligent about order placement and won't display full size
+- May not be as useful in pro-rata markets
+
+```{r preparation, cache=TRUE, message=FALSE}
+```
+
+Calculations:
+
+```{r calculations, cache=TRUE, message=FALSE}
+```
+
+Data Visualization:
+
+```{r data_visualization}
+```
+
+Regression Models:
+
+```{r regression_models}
+```
